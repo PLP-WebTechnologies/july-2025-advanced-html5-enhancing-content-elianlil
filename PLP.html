@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electronics Hub</title>
+  <link rel="stylesheet" href="PLP.css" />
+  
+</head>
+<body>
+
+  <header>
+    <h1>Electronics Hub</h1>
+    <p>Explore, Learn, and Order Electronic Components</p>
+  </header>
+
+  <nav>
+    <a href="#components">Components</a>
+    <a href="#specs">Specifications</a>
+    <a href="#media">Media</a>
+    <a href="#order">Order Form</a>
+  </nav>
+
+  <main>
+
+    <section id="components">
+      <h2>Popular Electronic Components</h2>
+      <ol>
+        <li>Resistors</li>
+        <li>Capacitors</li>
+        <li>Transistors</li>
+        <li>Microcontrollers</li>
+        <li>Sensors</li>
+      </ol>
+
+      <h3>Categories</h3>
+      <ul>
+        <li>Analog Components</li>
+        <li>Digital ICs</li>
+        <li>Power Supplies</li>
+        <li>Connectors & Cables</li>
+      </ul>
+    </section>
+
+    <section id="specs">
+      <h2>Component Specifications Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Type</th>
+            <th>Typical Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Resistor</td>
+            <td>Passive</td>
+            <td>Limit current, divide voltage</td>
+          </tr>
+          <tr>
+            <td>Capacitor</td>
+            <td>Passive</td>
+            <td>Store electric charge, filter signals</td>
+          </tr>
+          <tr>
+            <td>Microcontroller</td>
+            <td>Active</td>
+            <td>Programmable control of systems</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Component Media Gallery</h2>
+
+      <section>
+        <img class="Imge" src="/week 1/HeadPhones.jpg" alt="Electronics Banner">
+        <p>Image: Electronics Workbench</p>
+      </section>
+
+      <section>
+        <video width="100%" controls class="video">
+          <source src="/week 1/3283810-hd_1280_720_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Video: Introduction to Electronics</p>
+      <section>
+      </section>
+
+    <section id="order">
+      <h2>Component Order Form</h2> 
+      <form action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+
+          <label for="component">Component Name:</label>
+          <input type="text" id="component" name="component" required>
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="1000" required>
+
+          <label for="type">Component Type:</label>
+          <select id="type" name="type" required>
+            <option value="">-- Select Type --</option>
+            <option value="passive">Passive</option>
+            <option value="active">Active</option>
+            <option value="sensor">Sensor</option>
+          </select>
+          <label for="notes">Additional Notes:</label>
+          <textarea id="notes" name="notes" rows="4" maxlength="300"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Order</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Electronics Hub | Powered by Global Ltd</p>
+  </footer>
+
+</body>
+</html>
+
